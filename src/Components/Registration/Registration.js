@@ -4,6 +4,7 @@ import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-fireb
 import './Registration.css';
 import auth from '../../firebase.config';
 import Social from '../Social/Social';
+import Loading from '../Loading/Loading';
 
 const Registration = () => {
     const [agree, setAgree] = useState(false);
@@ -21,9 +22,9 @@ const Registration = () => {
         navigate('/login');
     }
 
-    // if(loading || updating){
-    //     return <Loading></Loading>
-    // }
+    if(loading || updating){
+        return <Loading></Loading>
+    }
 
     if (user) {
      console.log('user', user);  

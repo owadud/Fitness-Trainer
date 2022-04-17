@@ -2,12 +2,15 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Components/About/About';
 import Blog from './Components/Blog/Blog';
+import Confirmed from './Components/Confirmed/Confirm';
+import Confirm from './Components/Confirmed/Confirm';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import NotFound from './Components/NotFound/NotFound';
 import Registration from './Components/Registration/Registration';
+import RequireAuth from './Components/RequireAuth/RequireAuth';
 
 function App() {
   return (
@@ -20,7 +23,11 @@ function App() {
         <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/about" element={<About></About>}></Route>
         <Route path="/register" element={<Registration></Registration>}></Route>
-        
+        <Route path="/confirm" element={
+          <RequireAuth>
+            <Confirmed></Confirmed>
+          </RequireAuth>
+        }></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

@@ -28,3 +28,15 @@
 .details-description {
     width: 50%;
 }
+
+/* ====Responsive ===== */
+
+@media only screen and (max-width: 600px) {
+    .details-section {
+        display: inline-block;
+    }
+    .details-description{
+        text-align: center;
+        width: 100%;
+    }
+  }

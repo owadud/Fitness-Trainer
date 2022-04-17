@@ -1,7 +1,7 @@
 # Fitness Trainer
 
 ##Live 
-(https://github.com/facebook/create-react-app)
+(https://gym-trainer-135e4.web.app/)
 
 ## Used Libraries or Frameworks
 * React js
