@@ -3,7 +3,7 @@ import me from "../../Images/About/me.JPG";
 
 const About = () => {
     return (
-        <div className='text-center bg-secondary text-white'>
+        <div className='text-center bg-secondary text-white w-75 mx-auto'>
             <img height={300} src={me} alt='pic'/>
             <h3>A Owadud Bhuiyan</h3>
            <p>

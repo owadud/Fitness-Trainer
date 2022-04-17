@@ -1,0 +1,30 @@
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 450px;
+
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+}
+
+.details-section {
+    display: flex;
+    
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+}
+.details-description {
+    width: 50%;
+}

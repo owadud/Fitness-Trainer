@@ -1,10 +1,20 @@
 
 import React from 'react';
 import {Button, Card, CardGroup } from 'react-bootstrap';
+import banner from '../../Images/Banner/banner.jpg';
+import fitness from '../../Images/fitness/fitness.jpg';
+import './Home.css';
 
 const Home = () => {
     return (
         <>
+            <div className='banner'>
+                <img src={banner} alt="" />
+                <div className='banner-text'>
+                    <h1>Start Training Now</h1>
+                    <Button variant='danger'>Enroll Now</Button>
+                </div>
+            </div>
             <CardGroup id="service">
                 <Card>
                     <Card.Img variant="top" src="holder.js/100px160" />
@@ -47,6 +57,16 @@ const Home = () => {
                     </Card.Footer>
                 </Card>
             </CardGroup>
+
+            <div className='details-section'>
+                    <div className='details-img'>
+                        <img style={{ height:'300px',width:'500px'}} src={fitness} alt="" />
+                    </div>
+                    <div className='details-description'>
+                        <h3>why fitness is important?</h3>
+                        <p>Regular exercise and physical activity promotes strong muscles and bones. It improves respiratory, cardiovascular health, and overall health. Staying active can also help you maintain a healthy weight, reduce your risk for type 2 diabetes, heart disease, and reduce your risk for some cancers.</p>
+                    </div>
+            </div>
         </>
     );
 };
