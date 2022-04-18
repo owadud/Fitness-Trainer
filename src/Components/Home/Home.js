@@ -23,7 +23,7 @@ const Home = () => {
                         <img style={{ height:'300px',width:'500px'}} src={fitness} alt="" />
                     </div>
                     <div className='details-description'>
-                        <h3>why fitness is important?</h3>
+                        <h3 className='text-success'>Why fitness is important?</h3>
                         <p>Regular exercise and physical activity promotes strong muscles and bones. It improves respiratory, cardiovascular health, and overall health. Staying active can also help you maintain a healthy weight, reduce your risk for type 2 diabetes, heart disease, and reduce your risk for some cancers.</p>
                     </div>
             </div>

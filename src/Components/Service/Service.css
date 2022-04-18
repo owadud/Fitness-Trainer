@@ -1,0 +1,6 @@
+@media screen and (max-width: 600px) {
+    .d-flex{
+        display: block!important;
+        width: 100%;
+    }
+  }

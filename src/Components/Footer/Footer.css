@@ -1,0 +1,7 @@
+Button{
+    margin-right:10px;
+}
+Button a:hover{
+    cursor: pointer;
+    color: aqua!important;
+}
