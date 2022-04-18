@@ -14,8 +14,9 @@
 
 ### About this Project 
 
-* This a Fitness Trainer Website
-* You get Fitness service from this website
+* This a Personal Fitness Trainer Website
+* Trainer will train you at your home.
+* You get three packages from this website
 * You can sign up to this website and order your fitness services.
 * You can easily login using your Google Account.
-* You can contact details in the footer section.
+* You can contact us from the footer section.
