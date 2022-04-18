@@ -7,14 +7,15 @@ const ServiceDetails = ({service}) => {
     const {title, description, price,img} = service;
    
     return (
-        <div className="service">
+        <div className="service bg-light p-4">
         
            <Card>
                <Card.Img variant="top" src={img} style={{width: '40%', height: '50px'}}/>
                <Card.Body>
-                   <Card.Title>{title}</Card.Title>
-                   <Card.Text>
-                     <p> Summary: {description}</p>
+                   <Card.Title className='text-warning'>{title}</Card.Title>
+                   <Card.Text style={{height:"150px"}}>
+                   <h5 className="text-info">Summary</h5>
+                     <p>{description}</p>
                       
                    </Card.Text>
                    <Card.Text>

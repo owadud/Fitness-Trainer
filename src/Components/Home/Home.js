@@ -12,7 +12,8 @@ const Home = () => {
             <div className='banner'>
                 <img src={banner} alt="" />
                 <div className='banner-text'>
-                    <h1>Start Training Now</h1>
+                    <h1>Personal Fitness Trainer</h1>
+                    <h2>Start Training Now</h2>
                     <Button variant='danger'>Enroll Now</Button>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 [
   {
     "id": "625ca60727f6a6020fd8efa6", 
-    "price": "$2,520.64",
+    "price": "$200",
     "description": "Welcome to Personal Trainer, I am personally train you in your home for One Week except Sunday. You will all basic rules and information",
     "title":"Weekly Plan",
     "img":"https://i.ibb.co/0fgyVw1/logo1.jpg"
@@ -9,7 +9,7 @@
   },
   {
     "id": "625ca607bc9c44bb7cdbd720",
-    "price": "$1,310.99",
+    "price": "$1000",
     "description": "Welcome to Personal Trainer, I am personally train you for a Month except Every Sunday.You will get more tips and information.",
     "title":"Monthly Plan",
     "img":"https://i.ibb.co/NCKncbs/logo2.jpg"
@@ -17,7 +17,7 @@
   {
     "id": "625ca607986e1342bd1ee874",
     "picture": "http://placehold.it/32x32",
-    "price": "$2,681.70",
+    "price": "$2500",
     "description": "Welcome to Personal Trainer, I am personally train for a year and You will definitely reach your goal. ",
     "title":"Yearly Plan",
     "img":"https://i.ibb.co/rp0zqQR/logo3.jpg"

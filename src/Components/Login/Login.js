@@ -6,9 +6,9 @@ import auth from '../../firebase.config';
 import Loading from '../Loading/Loading';
 import Social from '../Social/Social';
 import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
 import './Login.css';
 
-import 'react-toastify/dist/ReactToastify.css';
 
 
 
