@@ -14,8 +14,12 @@ const ServiceDetails = ({service}) => {
                <Card.Body>
                    <Card.Title>{title}</Card.Title>
                    <Card.Text>
-                       {description}
-                       {price}
+                     <p> Summary: {description}</p>
+                      
+                   </Card.Text>
+                   <Card.Text>
+                       
+                   <p className='text-light bg-dark p-2'> Amount: {price}</p>
                    </Card.Text>
                </Card.Body>
                <Card.Footer  >

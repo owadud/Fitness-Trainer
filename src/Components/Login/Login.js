@@ -6,6 +6,7 @@ import auth from '../../firebase.config';
 import Loading from '../Loading/Loading';
 import Social from '../Social/Social';
 import { ToastContainer, toast } from 'react-toastify';
+import './Login.css';
 
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -56,16 +57,16 @@ function Login() {
         const email = emailRef.current.value;
         if (email) {
             await sendPasswordResetEmail(email);
-            toast('Sent email');
+            toast('Check your email');
         }
         else{
-            toast('please enter your email address');
+            toast('You did not enter your email. Please enter your email address');
         }
     }
     return (
       
-             <div className='container w-50 mx-auto'>
-            <h2 className='text-primary text-center mt-2'>Please Login</h2>
+             <div className='container w-50 mx-auto login bg-dark p-4'>
+            <h2 className='text-light bg-info text-center mt-2 p-2'>Please Login or Register</h2>
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Control ref={emailRef} type="email" placeholder="Enter email" required />
@@ -73,13 +74,16 @@ function Login() {
                 <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
                 </Form.Group>
-                <Button variant="primary w-50 mx-auto d-block mb-2" type="submit">
+                <Button variant="success w-50 mx-auto d-block mb-2" type="submit">
                     Login
+                </Button>
+                <Button variant="success w-50 mx-auto d-block mb-2" type="submit">
+                <Link to="/register" className='text-light pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link>
                 </Button>
             </Form>
             {errorElement}
-            <p>New to Genius Car? <Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p>
-            <p>Forget Password? <button className='btn btn-link text-primary pe-auto text-decoration-none' onClick={resetPassword} >Reset Password</button> </p>
+           
+            <p className='text-info'>Forget Password? <Button className='forget btn btn-warning text-light pe-auto text-decoration-none' onClick={resetPassword} >Reset Password</Button> </p>
              <Social></Social>
              <ToastContainer />
            
