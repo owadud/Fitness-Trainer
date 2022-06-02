@@ -3,7 +3,6 @@ import './App.css';
 import About from './Components/About/About';
 import Blog from './Components/Blog/Blog';
 import Confirmed from './Components/Confirmed/Confirm';
-import Confirm from './Components/Confirmed/Confirm';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
